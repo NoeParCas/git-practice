@@ -1,0 +1,92 @@
+.card {
+  background-color: lightgray;
+  width: 230px;
+  height: 230px;
+  border: solid 2px darkgrey;
+  border-radius: 15px 50px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center; /*verticalmente*/
+  align-items: center; /*hotizontalmente*/
+
+  /*flex: 1 1 230px; 
+
+  /*flex-shrink: 1
+  flex-grow: 1;
+  flex-basis: 230;*/
+
+  /*margin: 20px;
+  */
+}
+
+body {
+  margin: 0;
+}
+
+.card h2,
+.card p {
+  text-align: center;
+}
+
+#cards-container {
+  background-color: lightblue;
+  display: flex;
+  justify-content: space-around; /*horizontalmente*/
+  align-items: center; /*verticalmente*/
+
+  height: 100vh;
+
+  flex-wrap: wrap;
+}
+/* viewport heigth y viewport width */
+/* para asegurarnos que la altura/anchura siempre será la misma independientemente del tamaño de la pantalla*/
+/*flexbox se aplica sobre un contenedor*/
+
+/*display:block; ocupa todo el máximo del contenedor parent */
+/*display:inline; 
+
+
+/*PARA TABLETS */
+
+@media (max-width: 1030px) {
+  #cards-container {
+    background-color: lightgreen;
+  }
+
+  .card {
+    width: 360px;
+    height: 360px;
+    font-size: 26px;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 470px) {
+  #cards-container {
+    background-color: lightpink;
+  }
+
+  .card {
+    width: 150px;
+    height: 280px;
+    font-size: 16px;
+  }
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  box-shadow: 5px 5px 8px darkgrey;
+
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: lightseagreen;
+}
+
+button:active {
+  background-color: yellow;
+}
